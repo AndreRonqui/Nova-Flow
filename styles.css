@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+
+/* NAVBAR SUPERIOR */
+.navbar-top {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#txtBusca{
+    float:left;
+  border-radius: 20px;
+  padding-left:5px;
+  margin-top: 12%;
+  margin-left: 50px;
+  margin-right: 10px;
+  border:none;
+  height:40px;
+  width:180px;
+  font-size: 14px;
+  
+}
+.links-a{
+    display: flex;
+}
+.links-a2{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 2%;
+   
+
+}
+.nav-container-top {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 5%;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+
+.barra-pesquisa-top {
+    display: flex;
+    align-items: center;
+    background-color: #dcdcdc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    width: 470px;
+    height: 38px;
+}
+
+.barra-pesquisa-top input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.icone-lupa {
+    width: 20px;
+    height: 20px;
+}
+
+.login-icon {
+    height: 40px;
+    margin-right: 50px;
+}
+
+/* LINHA BRANCA DIVISÓRIA */
+.linha-branca {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+/* NAVBAR INFERIOR (MENU DE LINKS) */
+.navbar-bottom {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/* EDUCAÇÃO FINANCEIRA */
+.educacao {
+    width: 1024px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.texto-delimitado {
+    width: 690px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+    color: #000;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+.texto-delimitado h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* OBJETIVO */
+.objetivo {
+    width: 1024px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagem-objetivo img {
+    width: 360px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-objetivo {
+    color: white;
+    text-align: justify;
+    padding: 50px;
+    padding-inline: 500px;
+    
+    
+}
+
+.texto-objetivo h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+}
+
+.texto-objetivo p {
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+}
+
+/* OBJETIVO - INVERSÃO PARA REALIDADE */
+.objetivo.realidade {
+    flex-direction: row-reverse;
+}
+
+.objetivo.realidade .imagem-objetivo img {
+    width: 370px;
+    height: 370px;
+}
+
+/* CARROSSEL DE NOTÍCIAS */
+.carrossel {
+    width: 1024px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.carrossel h2 {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.noticias-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.noticia-card {
+    width: 32%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.noticia-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.noticia-card h3 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* PAGINA INVESTIMENTOS */
+.intro-investimentos {
+    width: 1024px;
+    margin: 40px auto;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.intro-img img {
+    width: 378px;
+    height: 378px;
+    object-fit: cover;
+    border-radius: 108px;
+}
+
+.intro-texto {
+    
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+.lista-investimentos {
+    width: 1024px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.lista-titulo {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.lista-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.lista-img img {
+    width: 310px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.lista-texto ul {
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    list-style-position: inside;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.tipo-investimento {
+    width: 1024px;
+    margin: 40px auto;
+    text-align: left;
+    color: #000;
+}
+
+.tipo-investimento h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tipo-investimento p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* FOOTER NOTICIAS */
+.footer-noticias {
+    background-color: rgba(224, 67, 53, 1);
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER IMPOSTO */
+.footer-imposto {
+    background-color: rgba(89, 142, 4, 1);
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER ACOES */
+.footer-acoes {
+    background-color: rgba(45, 45, 45, 0.8);
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER investimentos */
+.footer-investimentos {
+    background-color: rgba(49, 35, 125, 1);
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.footer-section h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 4px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.footer-icons {
+    margin-top: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
