@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #c91d1d;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .header-bottom h2 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  main {
+    padding-bottom: 40px;
+  }
+  
+  /* Filtros */
+  .filtros {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filtro {
+    background: #f1f1f1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .filtro.ativo {
+    background: #c91d1d;
+    color: white;
+  }
+  
+  /* Organização das Notícias em colunas */
+  .noticias {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+  }
+  
+  /* Cartões de Notícias */
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .tag {
+    background: #c91d1d;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    font-size: 0.8rem;
+    color: #777;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Novidades */
+  .novidades {
+    padding: 0 20px;
+  }
+  
+  .novidades h2 {
+    margin: 10px 0 20px;
+  }
+  
+  .lista-novidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Destaque */
+  .destaque {
+    padding: 20px;
+  }
+  
+  .destaque .card {
+    border: 1px solid #ccc;
+  }
+  
+  .destaque-tag {
+    font-weight: bold;
+  }
+  
+  /* Seção "Novo por aqui?" */
+  .novo-aqui {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .novo-aqui .box {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .novo-aqui button {
+    margin-top: 10px;
+    background: #c91d1d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Rodapé */
+  footer {
+    background: #c91d1d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  

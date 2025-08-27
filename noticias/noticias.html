@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal Financeiro - Novidades</title>
+  <!-- FontAwesome para ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #c91d1d;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+    }
+
+    header h1 {
+      font-weight: 700;
+    }
+
+    main {
+      padding: 30px 15px;
+    }
+
+    /* Container principal com duas colunas */
+    .container-novidades {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    /* Colunas */
+    .coluna-esquerda, .coluna-direita {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Para colunas responsivas (100% largura em telas menores) */
+    @media (max-width: 800px) {
+      .container-novidades {
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      .coluna-esquerda, .coluna-direita {
+        width: 100% !important;
+      }
+    }
+
+    /* Cards horizontais - imagem à esquerda, texto à direita */
+    .card-novidade.horizontal {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      padding: 15px;
+      cursor: pointer;
+      transition: box-shadow 0.3s;
+    }
+
+    .card-novidade.horizontal:hover {
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+    }
+
+    /* Imagem arredondada estilo "aba" */
+    .card-novidade.horizontal .imagem {
+      border-radius: 15px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    /* Primeira coluna - imagens maiores */
+    .coluna-esquerda .card-novidade.grande .imagem {
+      width: 140px;
+      height: 100px;
+      border-radius: 15px 50px 50px 15px;
+    }
+
+    /* Segunda coluna - imagens menores */
+    .coluna-direita .card-novidade.pequeno.subtitulo .imagem {
+      width: 80px;
+      height: 60px;
+      border-radius: 15px 40px 40px 15px;
+    }
+
+    /* Conteúdo (texto) */
+    .card-novidade .conteudo {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Tags com fundo curto e aba fina */
+    .tag {
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: white;
+      background: #c91d1d;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      line-height: 1;
+      min-width: max-content;
+    }
+
+    /* Aba arredondada da tag NOTÍCIAS (lado esquerdo) */
+    .tag.noticia {
+      padding-left: 14px;
+      padding-right: 6px;
+      border-radius: 15px 20px 20px 15px;
+    }
+
+    .tag.noticia::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 100%;
+      background: #a81515;
+      border-radius: 15px 0 0 15px;
+      z-index: -1;
+    }
+
+    /* Tags “Ações” com fundo padrão (sem aba) */
+    .tag.acoes {
+      background: #c91d1d;
+      padding: 3px 6px;
+      border-radius: 5px;
+    }
+
+    /* Títulos */
+    .coluna-esquerda .card-novidade.grande h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      color: #222;
+    }
+
+    .coluna-direita .card-novidade.pequeno.subtitulo h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      color: #444;
+    }
+
+    /* Limitar texto a 3 linhas (mais compatível, sem -webkit-line-clamp) */
+    .limitar-linhas {
+      display: block;
+      max-height: 3.6em; /* 3 linhas * 1.2em */
+      line-height: 1.2em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+
+    /* Informações de data e leitura */
+    .info {
+      font-size: 0.8rem;
+      color: #666;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .info i {
+      color: #c91d1d;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #c91d1d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portal Financeiro</h1>
+</header>
+
+<main>
+  <section class="container-novidades">
+    <!-- Coluna Esquerda: Novidades principais -->
+    <div class="coluna-esquerda" style="width: 600px;">
+      <div class="card-novidade horizontal grande">
+        <img src="imagens/novidade1.jpg" alt="Imagem 1" class="imagem" />
+        <div class="conteudo">
+          <span class="tag noticia">Notícias</span>
+          <h3>Lorem ipsum dolor sit amet. Est galisium</h3>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 31/07/2025</span>
+            <span><i class="fas fa-clock"></i> 2 min de leitura</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-novidade horizontal grande">
+        <img src="imagens/novidade2.jpg" alt="Imagem 2" class="imagem" />
+        <div class="conteudo">
+          <span class="tag noticia">Notícias</span>
+          <h3>Lorem ipsum dolor sit amet. Est galisium</h3>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 31/07/2025</span>
+            <span><i class="fas fa-clock"></i> 2 min de leitura</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-novidade horizontal grande">
+        <img src="imagens/novidade6.jpg" alt="Imagem 6" class="imagem" />
+        <div class="conteudo">
+          <span class="tag noticia">Notícias</span>
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 01/08/2025</span>
+            <span><i class="fas fa-clock"></i> 3 min de leitura</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna Direita: Subtópicos -->
+    <div class="coluna-direita" style="width: 300px;">
+      <div class="card-novidade horizontal pequeno subtitulo">
+        <img src="imagens/novidade3.jpg" alt="Imagem 3" class="imagem" />
+        <div class="conteudo">
+          <span class="tag acoes">Ações</span>
+          <h4 class="limitar-linhas">
+            Commodi vel odit provident ut suscipit unde quae officia.
+          </h4>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 31/07</span>
+            <span><i class="fas fa-clock"></i> 2min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-novidade horizontal pequeno subtitulo">
+        <img src="in.jpg" alt="Imagem 4" class="imagem" />
+        <div class="conteudo">
+          <span class="tag acoes">Ações</span>
+          <h4 class="limitar-linhas">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 31/07</span>
+            <span><i class="fas fa-clock"></i> 2min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-novidade horizontal pequeno subtitulo">
+        <img src="imagens/novidade5.jpg" alt="Imagem 5" class="imagem" />
+        <div class="conteudo">
+          <span class="tag acoes">Ações</span>
+          <h4 class="limitar-linhas">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, magnam!
+          </h4>
+          <div class="info">
+            <span><i class="far fa-calendar-alt"></i> 31/07</span>
+            <span><i class="fas fa-clock"></i> 2min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Portal Financeiro</p>
+</footer>
+
+</body>
+</html>
