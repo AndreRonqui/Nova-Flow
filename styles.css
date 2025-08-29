@@ -341,6 +341,16 @@ body {
 }
 
 /* FOOTER IMPOSTO */
+.footer-sobre {
+    background-color: #270E52;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER IMPOSTO */
 .footer-imposto {
     background-color: rgba(89, 142, 4, 1);
     color: #fff;
