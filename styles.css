@@ -431,7 +431,9 @@ body {
 }
 .linha1{
     display: flex;
+    font-size: 20px;
 }
 .linha2{
     display: flex;
+    font-size: 20px;
 }
