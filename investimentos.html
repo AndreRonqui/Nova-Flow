@@ -6,39 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investidor Digital</title>
     <link rel="stylesheet" href="styles.css">
+     <link rel="shortcut icon" href="Imagens/logoicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
-    <style>
-        .imageminvestimento {
+<style>
+    .imageminvestimento {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        background-image: url(Imagens/impostoderendaheader.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+
+    }
+
+    .melhorpravc {
+        color: white;
+        font-size: 35px;
+        display: flex;
+        margin-top: 120px;
+        justify-content: center;
+    }
+
+    .banner {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+
+        color: #fff;
+        /* imagem ao fundo + escurecimento para leitura */
+        background-image:
+            linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+            url("Imagens/lupainvestimentos.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 170px;
+        box-sizing: border-box;
+        display: flex;
+        /* sem posição absoluta; só organiza o conteúdo */
+    }
+
+    .banner .content {
+        max-width: 420px;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .banner .btn {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #d82a2a;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    @media (max-width:640px) {
+        .banner {
             width: 100%;
-            height: 100%;
-            min-height: 400px;
-            background-image: url(Imagens/impostoderendaheader.png);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-           
-            
+            padding: 16px
         }
-        .melhorpravc{
-            color: white;
-            font-size: 35px;
-            display: flex;
-            margin-top: 120px;
-            justify-content: center;
+
+        .banner .content {
+            font-size: 15px
         }
-    </style>
+    }
+</style>
 
 <body>
     <header>
         <nav class="imageminvestimento">
 
             <div class="links-a">
-                <a href="index.html" class="logo"><img src="Imagens/logoimposto.png" width="150px"  alt="LOGO"></a>
+                <a href="index.html" class="logo"><img src="Imagens/logoimposto.png" width="150px" alt="LOGO"></a>
                 <a href="noticias/noticias.html" class="links-a2">Notícias</a>
                 <a href="acoes.html" class="links-a2">Ações</a>
                 <a href="" class="links-a2">Iniciante</a>
@@ -47,80 +99,212 @@
 
                 <div class="Busca">
                     <a href="#" style="cursor: pointer;">
-                    <img src="Imagens/pesquisa.png" style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca" alt="Buscar"/>
+                        <img src="Imagens/pesquisa.png"
+                            style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca"
+                            alt="Buscar" />
                     </a>
-                    <input type="button" id="txtBusca"  placeholder="Pesquisar..."/>
-                    
-                  </div>
+                    <input type="button" id="txtBusca" placeholder="Pesquisar..." />
+
+                </div>
             </div>
-            <P class="melhorpravc">Descubra os Tipos de Investimentos e <br>      
-   Como Escolher o Melhor para Você!</P>
+            <P class="melhorpravc">Descubra os Tipos de Investimentos e <br>
+                Como Escolher o Melhor para Você!</P>
 
         </nav>
 
     </header>
 
-    <main>
-        <section>
-            <div class="sec1-investimentos">
-                <img src="Imagens/Money income-amico 1.png" alt="">
-                <p class="p1-investimentos">Entenda os diferentes tipos de investimentos financeiros e como escolher o melhor para seu perfil. Cada tipo de investimento possui características únicas, com diferentes níveis de risco, rentabilidade e prazos. Aqui, você encontrará uma explicação simples e objetiva sobre as opções mais populares no mercado financeiro, ajudando você a fazer escolhas informadas.</p>
-            </div>
-        </section>
-        <br><br>
-        <section>
-            <h2 style="text-align: center;"><strong>Principais tipos de investimentos</strong> </h2>
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
 
-            <div class="sec2-investimentos">
-                <img src="Imagens/investimentos-lista.png" alt="">
-                <ul style="margin-top: 70px;">
-                    <li>Investimentos de Renda Fixa</li>
-                    <li>Investimentos Alternativos</li>
-                    <li>Investimentos de Renda Variável</li>
-                    <li>Investimentos Digitais</li>
-                </ul>
-            </div>
-        </section>
-        <br><br><br><br>
-        <section>
-            <div style="justify-content: center; align-items: center;display: flex;">
-            <img  src="Imagens/Group 48.png" alt="">
+        <!-- Introdução -->
+        <div
+            style="display: flex; align-items: center; background-color: #5E746A; color: white; border-radius: 15px; padding: 20px; margin-bottom: 40px;">
+            <img src="Imagens/investimento.png" alt="Investimentos" style="width: 400px; margin-right: 20px;">
+            <p style="font-size: 14px; line-height: 1.5; text-align: justify;">
+                Entenda os diferentes tipos de investimentos financeiros e como escolher o melhor para seu perfil.
+                Cada tipo de investimento possui características únicas, com diferentes níveis de risco, rentabilidade e
+                prazos.
+                Aqui, você encontrará uma explicação simples e objetiva sobre as opções mais populares no mercado
+                financeiro,
+                ajudando você a fazer escolhas informadas.
+            </p>
         </div>
+
+        <!-- Lista de investimentos -->
+        <h2 style="text-align: center; margin-bottom: 20px;">Principais Tipos de Investimentos</h2>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+            <img src="Imagens/investimentos-lista.png" alt="Gráfico investimentos" style="width: 500px;">
+            <ul style="list-style-type: disc; font-size: 16px; line-height: 2;">
+                <li>Investimentos de Renda Fixa</li>
+                <li>Investimentos Alternativos</li>
+                <li>Investimentos de Renda Variável</li>
+                <li>Investimentos Digitais</li>
+            </ul>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <section>
+        <div style="justify-content: center; align-items: center;display: flex;">
+            <img src="Imagens/Group 48.png" alt="">
+        </div>
+        <BR><BR></BR></BR><BR></BR>
+    </section>
+
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px; text-align: center;">
+
+        <!-- Texto centralizado -->
+        <p style="font-size: 15px; line-height: 1.8; text-align: justify; display: inline-block; max-width: 800px;">
+            Existem diversos tipos de investimento, cada um com características próprias.
+            A renda fixa inclui opções como Tesouro Direto, CDB, LCI, LCA, LC e debêntures,
+            que oferecem previsibilidade e menor risco. Já na renda variável, há ações, fundos
+            imobiliários (FIIs), ETFs e BDRs, com maior potencial de lucro, mas também mais volatilidade.
+            Fundos de investimento reúnem recursos de vários investidores e são geridos por profissionais.
+            Há ainda a previdência privada, voltada para o longo prazo, e as criptomoedas, que oferecem
+            alta rentabilidade e alto risco. Também é possível investir diretamente em imóveis, ouro e outras
+            commodities.
+        </p>
+
+
+
+
+
+
+    </div>
+    <div class="banner">
+        <div class="content">
+            Se você está dando os primeiros passos no mundo dos investimentos, é essencial adotar
+            uma abordagem segura e bem planejada. A primeira recomendação é montar uma reserva de
+            emergência. Ela deve estar aplicada em investimentos de renda fixa com liquidez diária,
+            como o Tesouro Selic ou CDBs com resgate imediato, para garantir acesso rápido ao dinheiro
+            em imprevistos.
+            <br>
+            <a class="btn" href="#">Clique aqui para simular seus custos</a>
+        </div>
+    </div>
+
+
+
+
+    <BR><BR></BR></BR>
+
+ <h2 style="text-align: center; margin-bottom: 20px;">
+    Como escolher o investimento certo para você?
+  </h2>
+
+  <p style="max-width: 800px; margin: 0 auto 30px auto; font-size: 15px; line-height: 1.6; text-align: justify;">
+    Escolher o investimento ideal depende de alguns fatores pessoais e objetivos bem definidos. 
+    Não existe uma única resposta certa para todos, mas sim uma escolha baseada no seu perfil, 
+    nas suas metas e na sua realidade financeira. Veja os principais pontos que você deve considerar:
+  </p>
+
+  <div style="display: flex; justify-content: center; gap: 40px; max-width: 900px; margin: 0 auto;">
+
+    <!-- Coluna 1 -->
+    <div style="flex: 1; font-size: 14px; line-height: 1.6; text-align: justify;">
+      <h3 style="margin-bottom: 10px;">1. Conheça seu perfil de investidor</h3>
+      <p>
+        Antes de investir, é fundamental entender qual é o seu nível de tolerância ao risco. 
+        Os perfis mais comuns são:
+      </p>
+      <ul style="margin: 0 0 15px 20px; padding: 0;">
+        <li><b>Conservador:</b> prefere segurança, mesmo com menor rentabilidade.</li>
+        <li><b>Moderado:</b> aceita algum risco em troca de melhores resultados.</li>
+        <li><b>Arrojado:</b> busca alta rentabilidade e tolera oscilações maiores.</li>
+      </ul>
+      <p>
+        Esse perfil pode ser definido em testes oferecidos por bancos, corretoras ou plataformas de investimento.
+      </p>
+    </div>
+
+    <!-- Coluna 2 -->
+    <div style="flex: 1; font-size: 14px; line-height: 1.6; text-align: justify;">
+      <h3 style="margin-bottom: 10px;">2. Defina seus objetivos</h3>
+      <p>
+        O que você quer alcançar com seus investimentos? Pode ser:
+      </p>
+      <ul style="margin: 0 0 15px 20px; padding: 0;">
+        <li><b>Curto prazo</b> (até 1 ano): viagem, emergências, compras.</li>
+        <li><b>Médio prazo</b> (1 a 5 anos): trocar de carro, abrir um negócio.</li>
+        <li><b>Longo prazo</b> (mais de 5 anos): aposentadoria, independência financeira.</li>
+      </ul>
+      <p>
+        Cada objetivo exige um tipo diferente de investimento em relação ao risco, liquidez e rentabilidade.
+      </p>
+    </div>
+  </div>
+<br><br>
+
+
+
+  <section>
+    <div class="linha1">
+        <img style="width: 500px;" src="Imagens/linha1investimentos.png" alt="">
+        <p style="margin-left: 200px; margin-top: 100px; margin-right: 500px;"><strong>3. Considere a liquidez</strong> <br><br>
+Liquidez é a facilidade com que você pode resgatar o dinheiro. Para objetivos de curto prazo ou imprevistos, escolha investimentos com liquidez diária. Para objetivos de longo prazo, você pode optar por ativos com prazo maior, que geralmente oferecem melhor rentabilidade.</p>
+
+    </div>
 <BR><BR></BR></BR>
-        </section>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+    
+    <!-- Texto -->
+    <div style="width: 50%; line-height: 1.5; color: #000;">
+      <p style="margin: 0; margin-left: 200px;">
+        <strong>4. Avalie o risco e a rentabilidade</strong><br><br>
+        Todo investimento tem algum grau de risco. Renda fixa, como o Tesouro Direto e CDBs, tem riscos mais baixos. Já a renda variável, como ações e fundos imobiliários, oferece maiores ganho, mas com possibilidade de perdas. Equilibrar risco e retorno é essencial para uma carteira saudável.
+      </p>
+    </div>
+
+    <div><img src="Imagens/linha2investimentos.png" alt=""></div>
+    </div>
+
+  </div>
+<BR><BR></BR></BR>
+  <div class="linha1">
+        <img style="width: 500px;" src="Imagens/linha3investimentos.png" alt="">
+        <p style="margin-left: 200px; margin-top: 100px; margin-right: 500px;"><strong>3. Considere a liquidez</strong> <br><br>
+Liquidez é a facilidade com que você pode resgatar o dinheiro. Para objetivos de curto prazo ou imprevistos, escolha investimentos com liquidez diária. Para objetivos de longo prazo, você pode optar por ativos com prazo maior, que geralmente oferecem melhor rentabilidade.</p>
+
+    </div>
+
+
+<div style="display: flex; align-items: center; justify-content: space-between;">
+    
+    <!-- Texto -->
+    <div style="width: 50%; line-height: 1.5; color: #000;">
+      <p style="margin: 0; margin-left: 200px;">
+        <strong>4. Avalie o risco e a rentabilidade</strong><br><br>
+        Todo investimento tem algum grau de risco. Renda fixa, como o Tesouro Direto e CDBs, tem riscos mais baixos. Já a renda variável, como ações e fundos imobiliários, oferece maiores ganho, mas com possibilidade de perdas. Equilibrar risco e retorno é essencial para uma carteira saudável.
+      </p>
+    </div>
+
+    <div><img src="Imagens/linha4investimentos.png" alt=""></div>
+    </div>
+
+  </div>
+
+  </section>
 
 
 
 
 
-    
-    
-    
-    
-    
+<br><br>
     </main>
 
 
     <!-- FOOTER -->
-    <footer class="footer-investimentos">
+    <footer class="footer">
         <div class="footer-container">
             <!-- Mapa do Site -->
             <div class="footer-section">
                 <h4>Mapa do Site</h4>
                 <ul>
-<<<<<<< HEAD
                     <li><a href="index.html">Mapa do Site</a></li>
                     <li><a href="investimentos.html">Tipos de Investimento</a></li>
                     <li><a href="imposto.html">Imposto de Renda</a></li>
                     <li><a href="imposto.html">Iniciante</a></li>
-                    <li><a href="#">Quem Somos?</a></li>
-=======
-                  <li><a href="index.html">Mapa do Site</a></li>
-                  <li><a href="investimentos.html">Tipos de Investimento</a></li>
-                  <li><a href="imposto.html">Imposto de Renda</a></li>
-                  <li><a href="imposto.html">Iniciante</a></li>
-                  <li><a href="sobreNos.html">Quem Somos?</a></li>
->>>>>>> 72b8a9162d3d56cb6b59837c26dbcbe0f86e2cf4
+                    <li><a href="sobreNos.html">Quem Somos?</a></li>
                 </ul>
             </div>
 

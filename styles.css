@@ -429,3 +429,9 @@ body {
     width: 30px;
     height: 30px;
 }
+.linha1{
+    display: flex;
+}
+.linha2{
+    display: flex;
+}
