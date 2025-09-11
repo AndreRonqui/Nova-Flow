@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/logoicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .imagemindex {
+            width: 100%;
+            height: 40%;
+            min-height: 600px;
+            background-image: url(Imagens/imgheadercalculadora.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+
+        }
+
+        a {
+            font-family: "Nunito Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 20px;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100,
+                "YTLC" 500;
+        }
+
+        .calculadorainvest {
+            font-size: 30px;
+            font-family: "Nunito Sans", sans-serif;
+            color: white;
+            text-shadow: #535353 2px 3px 4px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 200px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="imagemindex">
+
+            <div class="links-a">
+                <a href="index.html" class="logo"><img src="Imagens/logocalculadora.png" width="150px" alt="LOGO"></a>
+                <a href="noticias/noticias.html" class="links-a2">Notícias</a>
+                <a href="acoes.html" class="links-a2">Ações</a>
+                <a href="" class="links-a2">Iniciante</a>
+                <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
+                <a href="imposto.html " class="links-a2">Imposto de renda</a>
+
+                <div class="Busca">
+                    <a href="#" style="cursor: pointer;">
+                        <img src="Imagens/pesquisa.png"
+                            style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca"
+                            alt="Buscar" />
+                    </a>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..." />
+
+                </div>
+            </div>
+            <P class="calculadorainvest"><strong> <i> Calculadora de <br>
+                        Investimentos </i></strong></P>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div style="font-size: 20px;">
+                <h1 style="text-align: center; margin-top: 50px;"> Regra 50-30-20</h1>
+                <br>
+                <p style="text-align: center;">A regra 50-30-20 é uma forma simples de organizar o dinheiro, separando-o
+                    em:</p>
+                <br>
+                <ul style="width: 40%; margin: 0 auto; text-align: justify; list-style-position: inside;">
+                    <li>50% para necessidades básicas (moradia, alimentação, transporte, contas fixas);</li>
+                    <li>30% para desejos (lazer, viagens, compras não essenciais);</li>
+                    <li>20% para poupança e investimentos.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+
+
+            <div style="display: flex; align-items: flex-start; margin-top: 200px; font-size: 20px;">
+
+                <!-- Texto à esquerda -->
+                <div style="width: 65%; text-align: justify; padding-right: 20px;">
+                    <h3 style="text-align: center; margin-bottom: 20px;">
+                        Regra 50-30-20 Adaptada
+                    </h3>
+
+                    <p style="margin-left: 50px;">
+                        No caso de quem recebe salário mínimo ou tem renda limitada, adaptamos a regra:
+                    </p>
+                    <p style="margin-left: 50px;">
+                        1. Primeiro, subtraímos os custos fixos da renda.<br>
+                        2. Com o que sobra, aplicamos:
+                    </p>
+
+                    <ul style="list-style-position: inside; margin: 10px 50px; padding: 0; text-align: justify;">
+                        <li>50% para investimentos / reserva de emergência</li>
+                        <li>30% para lazer e qualidade de vida</li>
+                        <li>20% para estudos e desenvolvimento profissional</li>
+                    </ul>
+
+
+                    <p style="margin-left: 70px; text-align: justify; margin-right: 400px; margin-top: 120px;">
+                        Essa adaptação ajuda a manter um equilíbrio financeiro mesmo com orçamento apertado,
+                        priorizando segurança, bem-estar e crescimento pessoal.
+                    </p>
+                </div>
+
+                <!-- Imagem à direita -->
+                <div style="width: 35%; text-align: right;">
+                    <img src="Imagens/linha1calculadora.png" alt="Decoração" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <section>
+
+
+            <div style="display: flex; align-items: flex-start; font-size: 20px;">
+
+                <!-- Imagem à esquerda -->
+                <div style="width: 35%;">
+                    <img src="Imagens/linha2calculadora.png" alt="Decoração" style="max-width: 100%; height: auto;">
+                </div>
+
+                <!-- Texto à direita -->
+                <div style="width: 65%;margin-top: 100px; text-align: justify; padding-left: 20px;">
+                    <h3 style="text-align: center; margin-bottom: 20px;">
+                        Como usar a calculadora?
+                    </h3>
+
+                    <p>
+                        Digite sua renda total (salário, pensão, renda extra, etc.).<br>
+                        Informe seus custos fixos mensais (aluguel, contas, alimentação básica, transporte).<br>
+                        Clique em Calcular.<br>
+                        Veja a distribuição ideal para:
+                    </p>
+
+                    <ul style="list-style-position: inside; margin: 10px 0; padding: 0; text-align: justify;">
+                        <li>Investimentos</li>
+                        <li>Lazer</li>
+                        <li>Estudos</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <div style="margin-top: 100px;">
+            <script src="https://elfsightcdn.com/platform.js" async>
+
+            </script>
+            <div class="elfsight-app-50cccd72-0760-436d-9693-80a3e0d4281e" data-elfsight-app-lazy>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Mapa do Site -->
+            <div class="footer-section">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="index.html">Mapa do Site</a></li>
+                    <li><a href="investimentos.html">Tipos de Investimento</a></li>
+                    <li><a href="imposto.html">Imposto de Renda</a></li>
+                    <li><a href="imposto.html">Iniciante</a></li>
+                    <li><a href="sobreNos.html">Quem Somos?</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-section">
+                <h4>Contato:</h4>
+                <ul>
+                    <li><a href="mailto:NovaFlow@gmail.com">E-Mail: NovaFlow@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/NovaFlowFinancas" target="_blank">Instagram:
+                            NovaFlowFinancas</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">YouTube: Nova Flow - Educação financeira</a>
+                    </li>
+                    <li><a href="https://www.pinterest.com" target="_blank">Pinterest: Nova Flow</a></li>
+                </ul>
+            </div>
+
+            <!-- Desenvolvido por -->
+            <div class="footer-section">
+                <p>Desenvolvido por: NovaFlow Eqp.</p>
+                <p>© 2025 - NovaFlow - Todos os direitos reservados</p>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagens/instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="Imagens/pinterest.png"
+                            alt="Pinterest"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="Imagens/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="Imagens/tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
