@@ -9,19 +9,19 @@
 </head>
 <style>
     .imagemimposto {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
         min-height: 400px;
+        aspect-ratio: 16/5;
         background-image: url(Imagens/headerSobre.png);
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center;
         display: flex;
         flex-direction: column;
         position: relative;
-
-
+        margin: 0 auto;
+        box-sizing: border-box;
     }
-
 
     body {
         background-color: black;
@@ -46,6 +46,48 @@
         border-radius: 8px;
         text-align: center;
     }
+
+    .container-final {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .txtfim {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    /* Última imagem da página responsiva e centralizada */
+    .img-final-fundo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        background: none;
+    }
+
+    .img-final-fundo img {
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        display: block;
+        margin: 0;
+        aspect-ratio: 16/5;
+        object-fit: contain;
+        background: none;
+    }
 </style>
 
 <body>
@@ -60,9 +102,14 @@
                 <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
                 <a href="imposto.html " class="links-a2">Imposto de renda</a>
 
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder="Pesquisar..." />
-                    <img src="Imagens/pesquisa.png" style="margin-top: 14%;" width="30px" id="btnBusca" alt="Buscar" />
+                <div class="Busca">
+                    <a href="#" style="cursor: pointer;">
+                        <img src="Imagens/pesquisa.png"
+                            style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca"
+                            alt="Buscar" />
+                    </a>
+                    <input type="button" id="txtBusca" placeholder="Pesquisar..." />
+
                 </div>
             </div>
             <P class="about">Sobre Nós, quem somos?</P>
@@ -111,15 +158,50 @@
             <h1 style="color: white;">A equipe por trás do Nova Flow é formada por talentos que uniram forças e
                 habilidades para dar vida a essa missão:</h1>
 
+
+
+
+
+            <nav class="imagemFundo">
+
+            </nav>
     </main>
 
 
+    <br><br><br><br>
 
 
+    <div class="container-final">
+        <h1 style="color: white;">Porque “Nova Flow”?</h1>
+
+        <p style="color: white;">O nome Nova Flow surgiu de um conceito que nos inspira: a mudança verdadeira começa
+            dentro de nós. O “Flow” representa o fluxo interior, a forma como encaramos desafios e tomamos decisões, e o
+            “Nova” simboliza renovação e transformação. Juntos, expressam a nossa visão de ajudar as pessoas a fluir
+            para um novo jeito de pensar e agir sobre o próprio dinheiro.</p>
 
 
+        <br><br><br><br>
+
+        <h1 style="color: white;">Público-alvo</h1>
+
+        <p style="color: white;">Nosso público principal são jovens a partir dos 18 anos e iniciantes no mundo das
+            finanças, mas nosso conteúdo é pensado para qualquer pessoa que queira aprender e evoluir. Queremos ser um
+            ponto de partida para quem busca mais autonomia, segurança e liberdade financeira.</p>
+
+    </div>
+
+    <br><br><br><br>
 
 
+    <div class="txtfim">
+        <h1 style="color: white;">Com o Nova Flow, mostramos que aprender sobre finanças não precisa ser complicado —
+            pode ser simples, dinâmico e transformador.</h1>
+    </div>
+
+    <!-- Última imagem responsiva -->
+    <div class="img-final-fundo">
+        <img src="Imagens/imgFundo.png" alt="">
+    </div>
 
 
 
