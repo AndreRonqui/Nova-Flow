@@ -5,6 +5,7 @@ body {
 }
 
 
+
 /* NAVBAR SUPERIOR */
 .navbar-top {
     background-color: #000;
@@ -14,7 +15,7 @@ body {
     justify-content: center;
 }
 #txtBusca{
-    display: flex;
+         background: url('Imagens/background.png') center center/cover no-repeat;
     float:left;
   border-radius: 20px;
   padding-left:5px;
