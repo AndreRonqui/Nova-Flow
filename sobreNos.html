@@ -9,7 +9,7 @@
 </head>
 <style>
     .imagemsobre {
-        width: 100vw;
+        width: 100%;
         min-height: 400px;
         aspect-ratio: 16/5;
         background-image: url(Imagens/headerSobre.png);
@@ -18,7 +18,6 @@
         background-position: center;
         display: flex;
         flex-direction: column;
-        position: relative;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -68,19 +67,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         margin: 0;
         padding: 0;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        transform: translateX(-50%);
         background: none;
     }
 
     .img-final-fundo img {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         display: block;
         margin: 0;
@@ -89,12 +84,16 @@
         background: none;
     }
 
-   .fundoImg{
- 
+    .fundoImg {
+
         background-image: url(Imagens/background.png);
+        width: 1000px;
+        height: 100%;
         
-   }
-    
+        background-position: center;
+
+
+    }
 </style>
 
 <body>
@@ -110,17 +109,16 @@
                 <a href="imposto.html " class="links-a2">Imposto de renda</a>
 
                 <div class="Busca">
-                   <a href="#" style="cursor: pointer;">
+                    <a href="#" style="cursor: pointer;">
                         <img src="Imagens/pesquisa.png"
                             style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca"
                             alt="Buscar" />
-                        </a>
-                        <input type="button" id="txtBusca" placeholder="Pesquisar..." />
+                    </a>
+                    <input type="button" id="txtBusca" placeholder="Pesquisar..." />
 
                 </div>
             </div>
             <P class="about">Sobre Nós, quem somos?</P>
-            =======
 
 
 
@@ -172,13 +170,18 @@
 
 
 
-                 
+
+            
+
+
+
+            </div>
+
+
+
             <div class="fundoImg">
-
-                </div>
-               
-
-
+                
+            </div>
 
 
 
