@@ -2,10 +2,14 @@
 TCC
 📘 Trabalho de Conclusão de Curso
 
-Este projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) do curso de [nome do curso] na [instituição].
+Este projeto, intitulado Nova Flow, foi desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) do curso de Informática para Internet na Etec Prof.° Mário Antônio Verza.
 
-O tema escolhido, [coloque o tema aqui], busca [explique em poucas palavras o objetivo principal do trabalho, por exemplo: propor uma solução tecnológica, analisar um problema, desenvolver um sistema ou criar uma pesquisa aplicada].
+O Nova Flow tem como foco a educação financeira, buscando oferecer um ambiente digital intuitivo e acessível para auxiliar estudantes e a comunidade em geral no desenvolvimento de hábitos mais conscientes sobre o uso do dinheiro.
 
-Durante o desenvolvimento, foram utilizadas [cite as principais ferramentas, linguagens ou métodos], permitindo a criação de um trabalho que une teoria e prática. O projeto tem como finalidade [explicar brevemente a contribuição: resolver um problema, facilitar um processo, gerar conhecimento, etc.].
+O projeto surgiu a partir da percepção da falta de conteúdos práticos e aplicáveis sobre finanças pessoais no dia a dia dos jovens. Com isso, o Nova Flow se propõe a apresentar informações claras, ferramentas de organização e dicas úteis que ajudam no planejamento financeiro, controle de gastos e noções básicas de investimentos.
 
-Este TCC representa não apenas a conclusão de uma etapa acadêmica, mas também a oportunidade de aplicar conhecimentos adquiridos ao longo da formação, contribuindo de forma prática e significativa para a área de [sua área de estudo].
+Durante o desenvolvimento, foram aplicados os conhecimentos adquiridos ao longo do curso, utilizando tecnologias da web para unir teoria e prática em uma solução digital funcional e de fácil uso.
+
+O objetivo principal é democratizar o acesso à educação financeira, estimulando a autonomia e preparando os usuários para lidar melhor com desafios econômicos atuais e futuros.
+
+Este TCC simboliza não apenas a conclusão de uma etapa acadêmica, mas também a oportunidade de aplicar os aprendizados em um projeto que pode gerar impacto real na comunidade escolar e além.
