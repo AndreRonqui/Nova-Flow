@@ -89,10 +89,145 @@
         background-image: url(Imagens/background.png);
         width: 1000px;
         height: 100%;
-        
+
         background-position: center;
 
 
+    }
+
+    .equipe-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin: 0 auto 100px auto;
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .linha-membros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 140px;
+        width: 100%;
+        margin-bottom: -110px;
+    }
+
+    .card-membro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0;
+        width: 300px;
+        min-height: 300px;
+    }
+
+    .card-membro-unico {
+        margin-bottom: 60px;
+    }
+
+    .card-duplo {
+        margin-bottom: 0;
+    }
+
+    .foto-membro {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: none;
+        margin-bottom: 18px;
+        background: #ccc;
+    }
+
+    .foto-vazia {
+        background: #eee;
+        border: 2px dashed #bbb;
+    }
+
+    .nome-membro {
+        font-weight: bold;
+        margin-bottom: 16px;
+        margin-top: 4px;
+        font-size: 1.35em;
+    }
+
+    .desc-membro {
+        font-size: 1.18em;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .desc-dupla {
+        color: #fff;
+        font-size: 1.18em;
+        text-align: center;
+        max-width: 600px;
+        margin: 18px auto 40px auto;
+    }
+
+    .card-prof {
+        margin-top: 60px;
+    }
+
+    .destaque {
+        color: #a47aff;
+        font-weight: 500;
+    }
+
+    /* Responsivo para telas menores */
+    @media (max-width: 900px) {
+        .equipe-cards {
+            max-width: 100%;
+            gap: 50px;
+        }
+
+        .linha-membros {
+            gap: 40px;
+        }
+
+        .card-membro {
+            width: 100%;
+            max-width: 260px;
+            min-height: 200px;
+        }
+
+        .desc-dupla {
+            max-width: 95vw;
+        }
+
+        .foto-membro {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        .equipe-cards,
+        .linha-membros {
+            flex-direction: column;
+            gap: 28px;
+            max-width: 100%;
+        }
+
+        .card-membro {
+            width: 100%;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+
+        .desc-dupla {
+            margin-top: 12px;
+            margin-bottom: 24px;
+        }
     }
 </style>
 
@@ -162,7 +297,7 @@
                 pessoa — especialmente os jovens — pode construir um futuro sólido com informação e atitude.</p>
 
 
-            <br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
 
 
             <h1 style="color: white;">A equipe por trás do Nova Flow é formada por talentos que uniram forças e
@@ -170,18 +305,72 @@
 
 
 
+        </div>
 
-            
+<br><br><br>
 
+        <div style="
+    width: 100vw;
+    margin: 0;
+    background: url('Imagens/background.png') no-repeat top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+            <div class="equipe-cards">
+                <div class="card-membro card-membro-unico">
+                    <img src="Imagens/diala.png" alt="Diala Chafic" class="foto-membro">
+                    <div class="nome-membro">Diala Chafic</div>
+                    <div class="desc-membro">
+                        <span class="destaque">Responsável</span> pela parte escrita e pelo apoio geral, garantindo
+                        clareza e objetividade nos conteúdos.
+                    </div>
+                </div>
+                <div class="linha-membros">
+                    <div class="card-membro card-duplo">
+                        <img src="Imagens/andri.png" alt="André Ronqui" class="foto-membro">
+                        <div class="nome-membro">André Ronqui</div>
+                    </div>
+                    <div class="card-membro card-duplo">
+                        <div class="foto-membro foto-vazia"></div>
+                        <div class="nome-membro">João Victor</div>
+                    </div>
+                </div>
+                <div class="desc-dupla">
+                    Desenvolvedores e designers, responsáveis por transformar as ideias em uma plataforma <span
+                    class="destaque">funcional</span> e atrativa.
+                </div>
+                <br>
+                <div class="linha-membros">
+                    <div class="card-membro">
+                        <div class="foto-membro foto-vazia"></div>
+                        <div class="nome-membro">João Mateus</div>
+                        <div class="desc-membro">
+                            Colaborador de design, ajudando a criar a identidade visual do projeto.
+                        </div>
+                    </div>
+                    <div class="card-membro">
+                        <img src="Imagens/gabriel.png" alt="Gabriel Henrique" class="foto-membro">
+                        <div class="nome-membro">Gabriel Henrique</div>
+                        <div class="desc-membro">
+                            Apoio geral, contribuindo em diferentes etapas do desenvolvimento.
+                        </div>
+                    </div>
+                </div>
 
+                <br>
 
+                <div class="card-membro card-prof">
+                    <img src="Imagens/professor.png" alt="Professor Rodolfo Andrey" class="foto-membro">
+                    <div class="nome-membro">Professor Rodolfo Andrey</div>
+                    <div class="desc-membro">
+                        Orientador do projeto, oferecendo suporte técnico e direcionamento acadêmico.
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br>
             </div>
-
-
-
-            <div class="fundoImg">
-                
-            </div>
+        </div>
 
 
 
@@ -211,7 +400,7 @@
 
     </div>
 
-    <br><br><br><br>
+
 
 
 
@@ -226,7 +415,7 @@
 
 
 
-    <br><br><br><br>
+    <br><br><br>
 
 
     <div class="txtfim">
