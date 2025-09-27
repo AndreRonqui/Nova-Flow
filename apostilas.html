@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostilas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="Imagens/logoicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #191819;
+    }
+
+    .imagemindex {
+      width: 100%;
+      height: 40%;
+      min-height: 70px;
+      background-image: url(Imagens/fundoApostilas.png);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    a {
+      font-family: "Nunito Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 20px;
+      font-style: normal;
+      font-variation-settings: "wdth" 100, "YTLC" 500;
+    }
+
+    .imagemobjetivo {
+      width: 100%;
+      height: 100%;
+      min-height: 700px;
+      background-image: url(Imagens/objetivo.png);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .conectamos {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-size: 40px;
+      color: white;
+      margin-left: 10%;
+      margin-top: 10%;
+      margin-right: 35%;
+    }
+
+    .arraste {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-size: 40px;
+      color: white;
+      margin-left: 10%;
+      margin-top: 10%;
+      margin-right: 25%;
+    }
+
+    .indexcta {
+      display: flex;
+    }
+
+    .fundo {
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card-me-poupe,
+    .card-primo-rico,
+    .card-cerbasi,
+    .card-maiara {
+      border-radius: 8px;
+      padding: 15px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .img-me-poupe,
+    .img-primo-rico,
+    .img-cerbasi,
+    .img-maiara {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+
+
+    .texto-me-poupe,
+    .texto-primo-rico,
+    .texto-cerbasi,
+    .texto-maiara {
+      font-size: 18px;
+      color: #fff;
+      text-align: justify;
+      font-family: 'Opens Sans', sans-serif;
+    }
+
+    /* 🔽 Estilo específico da seção PDFs */
+    .fundo-pdf {
+      background-color: #121212;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+
+
+      margin-top: 80px;
+    }
+
+    .container-pdf {
+      display: flex;
+
+      gap: 40px;
+    }
+
+    .lado-esquerdo {
+      flex: 1;
+      text-align: left;
+    }
+
+    .titulo-esquerdo {
+      font-size: 40px;
+      font-weight: bold;
+
+      margin-bottom: 20px;
+      margin-left: 80px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .img-esquerdo {
+      width: 417px;
+      padding-top: 10%;
+      margin-left: 102px;
+
+
+    }
+
+    .lado-direito {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 2%;
+    }
+
+    .card-pdf {
+      background-color: #1e1e1e;
+      border-radius: 50px;
+      padding: 50px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-right: 7%;
+
+    }
+
+    .icone-pdf {
+      background-color: #3a2a3d;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .conteudo-pdf {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .titulo-pdf {
+      font-size: 16px;
+      font-weight: bold;
+
+    }
+
+    .descricao-pdf {
+      font-size: 13px;
+      color: #ccc;
+
+    }
+
+    .fundo-livros {
+      color: white;
+      padding: 40px 20px;
+      margin-top: 50px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .titulo-livros {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .container-livros {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card-livro {
+      width: 394px;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .img-livro {
+      width: 100%;
+      min-width: 394px;
+      height: 565px;
+
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .titulo-card-livro {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 10px;
+      color: #fff;
+    }
+
+    .texto-card-livro {
+      font-size: 14px;
+      color: #ddd;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      flex: 1 1 250px;
+      /* largura mínima, e cresce */
+      max-width: 500px;
+    }
+
+    .card-link>div {
+
+      
+      padding: 15px;
+      height: 100%;
+      /* força ocupar toda altura */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card-link:hover>div {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-link:active>div {
+      transform: scale(0.98);
+    }
+
+    .img-me-poupe,
+    .img-primo-rico,
+    .img-cerbasi,
+    .img-maiara {
+      width: 100%;
+      height: auto;
+      
+      margin-bottom: 10px;
+    }
+
+    .titulo-me-poupe,
+    .titulo-primo-rico,
+    .titulo-cerbasi,
+    .titulo-maiara {
+
+
+      margin-bottom: 8px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+      margin: 10px 0;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .texto-me-poupe,
+    .texto-primo-rico,
+    .texto-cerbasi,
+    .texto-maiara {
+      font-size: 18px;
+      line-height: 1.4;
+      flex-grow: 1;
+      /* Faz o texto ocupar espaço igual */
+    }
+    .card-link-livro {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  flex: 1 1 ;
+  
+}
+
+.card-link-livro .card-livro {
+
+  min-width: 100px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link-livro:hover .card-livro {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.card-link-livro:active .card-livro {
+  transform: scale(0.97);
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="imagemindex">
+      <div class="links-a">
+        <a href="index.html" class="logo"><img src="Imagens/Logo.png" width="150px" alt="LOGO"></a>
+        <a href="noticias/noticias.html" class="links-a2">Notícias</a>
+        <a href="acoes.html" class="links-a2">Ações</a>
+        <a href="" class="links-a2">Iniciante</a>
+        <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
+        <a href="imposto.html " class="links-a2">Imposto de renda</a>
+        <div class="Busca">
+          <input type="text" id="txtBusca" placeholder="Pesquisar..." />
+          <a href="#" style="cursor: pointer;">
+            <img src="Imagens/pesquisa.png" style="width: 30px;height:30px;margin-top:6px; " id="btnBusca"
+              alt="Buscar" />
+          </a>
+        </div>
+      </div>
+
+      <div class="indexcta">
+        <div>
+          <h1 class="conectamos">Descubra o melhor jeito de investir para você</h1>
+          <p class="arraste">Arraste para cima e descubra diversos canais ensinando o melhor sobre investimento</p>
+          <a href="#" id="scrollBtn" style="margin-left: 30%;">
+            <img src="Imagens/botaoDescer.png" style="margin-top: 100px;" alt="">
+          </a>
+        </div>
+        <img src="Imagens/iphoneapostilas.png"
+          style="margin-left: 50px; margin-right: 7%; margin-top: 50px; max-width: 100%; max-height: 100%; min-height: 700px;"
+          width="700px" alt="">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2
+        style="font-family: 'Open Sans', sans-serif; color: white; font-size: 35px; align-items: center; display: flex; justify-content: center; margin-top: 4%;">
+        Canais de investimento</h2>
+
+      <div class="fundo">
+        <div class="container">
+
+          <a href="https://www.youtube.com/channel/UC8mDF5mWNGE-Kpfcvnn0bUg" target="_blank" class="card-link">
+            <div class="card-me-poupe">
+              <img src="Imagens/nathaliamepoupe.png" alt="Me Poupe!" class="img-me-poupe">
+              <div class="titulo-me-poupe">Me Poupe!</div>
+              <div class="texto-me-poupe">
+                O canal Me Poupe!, criado por Nathalia Arcuri, é o maior canal de finanças do YouTube no Brasil.
+                Ele ensina de forma prática e bem-humorada como economizar, investir e conquistar independência
+                financeira.
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@primorico" target="_blank" class="card-link">
+            <div class="card-primo-rico">
+              <img src="Imagens/PrimoRico.png" alt="O Primo Rico" class="img-primo-rico">
+              <div class="titulo-primo-rico">O Primo Rico</div>
+              <div class="texto-primo-rico">
+                Focado em finanças pessoais, investimentos e empreendedorismo.
+                Traz dicas práticas, entrevistas e reflexões sobre como alcançar a liberdade financeira.
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@GustavocerbasiBr" target="_blank" class="card-link">
+            <div class="card-cerbasi">
+              <img src="Imagens/GustavoCerbasi.png" alt="Gustavo Cerbasi" class="img-cerbasi">
+              <div class="titulo-cerbasi">Gustavo Cerbasi</div>
+              <div class="texto-cerbasi">
+                Um dos maiores especialistas em finanças do Brasil, Cerbasi ensina sobre planejamento financeiro,
+                investimentos e vida financeira em casal.
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/@MaiaraXavier" target="_blank" class="card-link">
+            <div class="card-maiara">
+              <img src="Imagens/MaiaraXavier.png" alt="Maiara Xavier" class="img-maiara">
+              <div class="titulo-maiara">Maiara Xavier</div>
+              <div class="texto-maiara">
+                Explica investimentos, economia e finanças com didática clara e objetiva.
+                Excelente para iniciantes que querem aprender a investir com segurança.
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+
+  
+    <section class="fundo-pdf">
+      <div class="container-pdf">
+        <!-- Lado Esquerdo -->
+        <div class="lado-esquerdo">
+          <div class="titulo-esquerdo">
+            Confira conteúdos <br>
+            didáticos relacionados <br>
+            a investimentos
+
+
+          </div>
+
+          <img src="Imagens/jovemdotablet.png" alt="Homem segurando tablet" class="img-esquerdo">
+        </div>
+
+
+        <img src="Imagens/linhadocaradotabletodoladodospdf.png" style="margin-left: 7%; margin-right: 2%;" alt="">
+
+
+
+        <!-- Lado Direito -->
+        <div class="lado-direito">
+
+
+
+
+          <a href="https://educapes.capes.gov.br/bitstream/capes/430564/2/Apostila%20B%C3%A1sico%20em%20Finan%C3%A7as%20Pessoais.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card-pdf"
+              style="cursor: pointer; background-color: #CDCDCD; border-radius: 50px; padding: 30px 40px; display: flex; align-items: center; gap: 15px; transition: background 0.3s;">
+              <img src="Imagens/pdfimg.png" alt="PDF" style="width: 60px; height: 60px;">
+              <div class="conteudo-pdf" style="display: flex; flex-direction: column;">
+                <div class="titulo-pdf" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #000;">
+                  Guia Prático de Finanças Pessoais</div>
+                <div class="descricao-pdf" style="font-size: 16px; color: #000; line-height: 1.4;">Aprenda a organizar
+                  seu dinheiro e dar os primeiros passos rumo à independência financeira.</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/caderno_cidadania_financeira.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card-pdf"
+              style="cursor: pointer; background-color: #CDCDCD; border-radius: 50px; padding: 30px 40px; display: flex; align-items: center; gap: 15px; transition: background 0.3s;">
+              <img src="Imagens/pdfimg.png" alt="PDF" style="width: 60px; height: 60px;">
+              <div class="conteudo-pdf" style="display: flex; flex-direction: column;">
+                <div class="titulo-pdf" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #000;">
+                  Caderno de Educação Financeira – Gestão de Finanças</div>
+                <div class="descricao-pdf" style="font-size: 16px; color: #000; line-height: 1.4;">Conceitos simples e
+                  práticos para planejar, controlar e melhorar sua vida financeira.</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://egov.df.gov.br/wp-content/uploads/2019/09/Apostila.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card-pdf"
+              style="cursor: pointer; background-color: #CDCDCD; border-radius: 50px; padding: 30px 40px; display: flex; align-items: center; gap: 15px; transition: background 0.3s;">
+              <img src="Imagens/pdfimg.png" alt="PDF" style="width: 60px; height: 60px;">
+              <div class="conteudo-pdf" style="display: flex; flex-direction: column;">
+                <div class="titulo-pdf" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #000;">
+                  Apostila de Educação Financeira Pessoal – EGOV</div>
+                <div class="descricao-pdf" style="font-size: 16px; color: #000; line-height: 1.4;">Orientações
+                  essenciais para administrar suas finanças e tomar decisões mais conscientes.</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.anbima.com.br/data/files/42/40/0C/33/466A4810EA926748882BA2A8/CPA-10-Cap3.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card-pdf"
+              style="cursor: pointer; background-color: #CDCDCD; border-radius: 50px; padding: 30px 40px; display: flex; align-items: center; gap: 15px; transition: background 0.3s;">
+              <img src="Imagens/pdfimg.png" alt="PDF" style="width: 60px; height: 60px;">
+              <div class="conteudo-pdf" style="display: flex; flex-direction: column;">
+                <div class="titulo-pdf" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #000;">
+                  CPA-10 – Conceitos Básicos de Finanças</div>
+                <div class="descricao-pdf" style="font-size: 16px; color: #000; line-height: 1.4;">Introdução clara aos
+                  fundamentos financeiros essenciais para certificação e prática no mercado.</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://sebrae.com.br/Sebrae/Portal%20Sebrae/Arquivos/ebook_gestao-financeira.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card-pdf"
+              style="cursor: pointer; background-color: #CDCDCD; border-radius: 50px; padding: 30px 40px; display: flex; align-items: center; gap: 15px; transition: background 0.3s;">
+              <img src="Imagens/pdfimg.png" alt="PDF" style="width: 60px; height: 60px;">
+              <div class="conteudo-pdf" style="display: flex; flex-direction: column;">
+                <div class="titulo-pdf" style="font-size: 20px; font-weight: bold; margin-bottom: 5px; color: #000;">
+                  Ebook de Gestão Financeira</div>
+                <div class="descricao-pdf" style="font-size: 16px; color: #000; line-height: 1.4;">Estratégias práticas
+                  para organizar, controlar e potencializar seus recursos financeiros.</div>
+              </div>
+            </div>
+          </a>
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <section>
+
+      <div class="fundo-livros">
+  <h2 class="titulo-livros">Livros para melhorar a vida financeira</h2>
+
+  <div class="container-livros">
+    
+    <a href="https://mepoupe.com/dicas-de-riqueza/chefe-de-mim-livro/" target="_blank" class="card-link-livro">
+      <div class="card-livro">
+        <img src="Imagens/chefedemimlivro.png" alt="Chefe de Mim" class="img-livro">
+        <h3 class="titulo-card-livro">Chefe de mim</h3>
+        <p class="texto-card-livro">
+          No livro “Chefe de Mim: Liberdade financeira sem carteira assinada”, Nath
+          compartilha técnicas práticas, histórias inspiradoras e mostra, de forma leve, como simplificar esse
+          universo contábil que costuma assustar tantos trabalhadores autônomos.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.saraivaconteudo.com.br/baixar-livro-sem-dividas-o-guia-completo-para-se-livrar-das-dividas-e-fazer-o-dinheiro-sobrar-no-fim-do-mes-anna-kesya-lima-pdf" target="_blank" class="card-link-livro">
+      <div class="card-livro">
+        <img src="Imagens/semdividaslivro.png" alt="Sem Dívidas" class="img-livro">
+        <h3 class="titulo-card-livro">Sem dívidas</h3>
+        <p class="texto-card-livro">
+          Dentre os assuntos tratados no livro estão como fazer um orçamento inteligente,
+          como pagar dívidas de forma mais rápida e como usar o dinheiro que sobrou para investir.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.investidordefiis.com/resumo-do-livro-pai-rico-pai-pobre-de-robert-kiyosaki/" target="_blank" class="card-link-livro">
+      <div class="card-livro">
+        <img src="Imagens/PaiRicoPaiPobreLivro.png" alt="Pai Rico Pai Pobre" class="img-livro">
+        <h3 class="titulo-card-livro">Pai Rico Pai Pobre</h3>
+        <p class="texto-card-livro">
+          Com uma abordagem única, o livro apresenta a visão de duas mentalidades opostas:
+          a do pai rico e a do pai pobre. Essa diferença é fundamental para entender como construir um futuro
+          financeiro sólido.
+        </p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <br><br><br><br><br>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Mapa do Site</h4>
+        <ul>
+          <li><a href="index.html">Mapa do Site</a></li>
+          <li><a href="investimentos.html">Tipos de Investimento</a></li>
+          <li><a href="imposto.html">Imposto de Renda</a></li>
+          <li><a href="imposto.html">Iniciante</a></li>
+          <li><a href="sobreNos.html">Quem Somos?</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contato:</h4>
+        <ul>
+          <li><a href="mailto:NovaFlow@gmail.com">E-Mail: NovaFlow@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/NovaFlowFinancas" target="_blank">Instagram: NovaFlowFinancas</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">YouTube: Nova Flow - Educação financeira</a></li>
+          <li><a href="https://www.pinterest.com" target="_blank">Pinterest: Nova Flow</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <p>Desenvolvido por: NovaFlow Eqp.</p>
+        <p>© 2025 - NovaFlow - Todos os direitos reservados</p>
+        <div class="footer-icons">
+          <a href="https://www.instagram.com" target="_blank"><img src="Imagens/instagram.png" alt="Instagram"></a>
+          <a href="https://www.pinterest.com" target="_blank"><img src="Imagens/pinterest.png" alt="Pinterest"></a>
+          <a href="https://www.youtube.com" target="_blank"><img src="Imagens/youtube.png" alt="YouTube"></a>
+          <a href="https://www.tiktok.com" target="_blank"><img src="Imagens/tiktok.png" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("scrollBtn").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.scrollBy({
+        top: window.innerHeight,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+
+</html>
