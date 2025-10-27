@@ -135,7 +135,7 @@ body {
 .texto-delimitado {
     width: 690px;
     margin: 20px auto;
-    border: 1px solid #000;
+    
     border-radius: 15px;
     padding: 20px;
     color: #000;
@@ -171,7 +171,7 @@ body {
     color: white;
     text-align: justify;
     padding: 50px;
-    padding-inline: 500px;
+    padding-inline: 100px;
     
     
 }

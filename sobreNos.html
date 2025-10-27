@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investidor Digital</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/logoicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 <style>
     .imagemsobre {
@@ -24,6 +40,7 @@
 
     body {
         background-color: black;
+        font-family: 'Open Sans', sans-serif;
     }
 
 
@@ -38,14 +55,7 @@
     }
 
 
-    .container-sobre {
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-    }
-
+  
     .container-final {
         max-width: 800px;
         margin: 50px auto;
@@ -103,6 +113,7 @@
         margin: 0 auto 100px auto;
         width: 100%;
         max-width: 700px;
+   
         position: relative;
         z-index: 2;
     }
@@ -215,7 +226,7 @@
         .linha-membros {
             flex-direction: column;
             gap: 28px;
-            max-width: 100%;
+            
         }
 
         .card-membro {
@@ -229,6 +240,19 @@
             margin-bottom: 24px;
         }
     }
+    .repetidas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textojustificado {
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
 </style>
 
 <body>
@@ -239,18 +263,16 @@
                 <a href="index.html" class="logo"><img src="Imagens/SobreNosLogo.png" width="150px" alt="LOGO"></a>
                 <a href="noticias/noticias.html" class="links-a2">Notícias</a>
                 <a href="acoes.html" class="links-a2">Ações</a>
-                <a href="" class="links-a2">Iniciante</a>
+                <a href="iniciante.html" class="links-a2">Iniciante</a>
                 <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
                 <a href="imposto.html " class="links-a2">Imposto de renda</a>
 
                 <div class="Busca">
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..." />
                     <a href="#" style="cursor: pointer;">
-                        <img src="Imagens/pesquisa.png"
-                            style="width: 30px;height:30px;margin-top:6px; margin-left: 40px;" id="btnBusca"
+                        <img src="Imagens/pesquisa.png" style="width: 30px;height:30px;margin-top:6px; " id="btnBusca"
                             alt="Buscar" />
                     </a>
-                    <input type="button" id="txtBusca" placeholder="Pesquisar..." />
-
                 </div>
             </div>
             <P class="about">Sobre Nós, quem somos?</P>
@@ -268,40 +290,41 @@
 
 
     <main>
-        <div class="container-sobre">
-            <h1 style="color: white;">Como começou?</h1>
+
+        <h1 style="color: white; justify-content: center; text-align: center;">Como começou?</h1>
+        <div class="repetidas">
+        
 
 
 
-            <p style="color: white;">O Nova Flow é mais do que um projeto acadêmico — é o resultado de uma ideia que
+            <p class="textojustificado" style="color: white;">O Nova Flow é mais do que um projeto acadêmico — é o resultado de uma ideia que
                 nasceu dentro da sala de aula e ganhou vida para transformar a forma como os jovens lidam com o
                 dinheiro. Desenvolvido por estudantes do curso técnico em Informática para Internet, integrado ao ensino
                 médio da Escola Professor Mário Antônio Verza, em Palmital – SP, o projeto foi criado como parte do
                 nosso Trabalho de Conclusão de Curso (TCC), mas desde o início carregou um objetivo muito maior: tornar
                 a educação financeira acessível, prática e inspiradora para todos.</p>
-
+</div>
 
 
             <br><br><br><br>
 
 
 
-            <h1 style="color: white;">Nosso objetivo:</h1>
+            <h2 style="color: white; text-align: center;">Nosso objetivo:</h2>
 
 
 
-
-            <p style="color: white;">Nosso propósito é simples, mas poderoso: ensinar a investir, organizar as finanças
+        <div class="repetidas">
+            <p class="textojustificado" style="color: white;">Nosso propósito é simples, mas poderoso: ensinar a investir, organizar as finanças
                 e adotar hábitos que conduzam a uma vida financeira mais equilibrada. Queremos quebrar a ideia de que
                 falar de dinheiro é complicado ou reservado apenas para especialistas. Aqui, acreditamos que qualquer
                 pessoa — especialmente os jovens — pode construir um futuro sólido com informação e atitude.</p>
-
+</div>
 
             <br><br><br><br><br><br><br><br><br><br>
 
 
-            <h1 style="color: white;">A equipe por trás do Nova Flow é formada por talentos que uniram forças e
-                habilidades para dar vida a essa missão:</h1>
+            <h2  style="color: white; text-align: center; margin-left: 20%; margin-right: 20%;">A equipe por trás do Nova Flow é formada por talentos que uniram forças e habilidades para dar vida a essa missão:</h2>
 
 
 
@@ -333,7 +356,7 @@
                         <div class="nome-membro">André Ronqui</div>
                     </div>
                     <div class="card-membro card-duplo">
-                        <div class="foto-membro foto-vazia"></div>
+                        <img src="Imagens/zeca.png" alt="João Victor" class="foto-membro">
                         <div class="nome-membro">João Victor</div>
                     </div>
                 </div>
@@ -344,7 +367,7 @@
                 <br>
                 <div class="linha-membros">
                     <div class="card-membro">
-                        <div class="foto-membro foto-vazia"></div>
+                        <img src="Imagens/jaomteus.png" alt="João Mateus" class="foto-membro">
                         <div class="nome-membro">João Mateus</div>
                         <div class="desc-membro">
                             Colaborador de design, ajudando a criar a identidade visual do projeto.
@@ -441,7 +464,7 @@
                     <li><a href="index.html">Mapa do Site</a></li>
                     <li><a href="investimentos.html">Tipos de Investimento</a></li>
                     <li><a href="imposto.html">Imposto de Renda</a></li>
-                    <li><a href="imposto.html">Iniciante</a></li>
+                    <li><a href="iniciante.html">Iniciante</a></li>
                     <li><a href="sobreNos.html">Quem Somos?</a></li>
                 </ul>
             </div>

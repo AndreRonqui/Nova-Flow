@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Imagens/logoicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .imageminvestimento {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        background-image: url(Imagens/headerIniciantes.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+
+    }
+
+    .melhorpravc {
+        color: white;
+        font-size: 35px;
+        display: flex;
+        margin-top: 120px;
+        justify-content: center;
+    }
+
+    .caixa-educacao {
+        background-color: #004488;
+        color: white;
+        padding: 40px;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .titulo-educacao {
+        font-size: 20px;
+        margin: 0;
+        width: 300px;
+    }
+
+    .titulo-educacao strong {
+        display: block;
+        font-size: 30px;
+        margin-top: 8px;
+    }
+
+    .linha-divisoria {
+        border-left: 1px solid white;
+        height: 150px;
+        margin: 0 30px;
+        position: relative;
+    }
+
+    .ponto {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        left: -5px;
+    }
+
+    .ponto:nth-child(1) {
+        top: 30px;
+    }
+
+    .ponto:nth-child(2) {
+        bottom: 30px;
+    }
+
+    .texto-educacao {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .titulo-passos {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .container-passos {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card-passo {
+        width: 180px;
+        height: 140px;
+        border-radius: 15px;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .btn-download {
+        display: inline-block;
+        padding: 12px 25px;
+        border-radius: 12px;
+        background-color: #0d47a1;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn-download:hover {
+        background-color: #08306b;
+    }
+
+    .pqinvestir {
+        width: 100%;
+        height: 100%;
+        min-height: 900px;
+        background-image: url(Imagens/Group\ 83.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    /* ----- FAQ (Accordion) ----- */
+    .faq-container {
+      font-family: Arial, sans-serif;
+      
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .faq-box {
+      background: #ebebeb;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .faq-title {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .faq-accordion {
+      border: none;
+      outline: none;
+      background: #ffffff;
+      width: 100%;
+      padding: 12px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 8px;
+      margin: 6px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-accordion:hover {
+      background: #e5e5e5;
+    }
+
+    .faq-accordion:after {
+      content: '\25BC'; /* seta para baixo */
+      font-size: 14px;
+      transition: transform 0.3s;
+    }
+
+    .faq-active:after {
+      transform: rotate(180deg);
+    }
+
+    .faq-panel {
+      padding: 10px;
+      display: none;
+      background: #fafafa;
+      margin-top: 2px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* ----- Armadilhas ----- */
+    .trap-container {
+      font-family: Arial, sans-serif;
+    
+      display: flex;
+      
+     
+    }
+
+    .trap-box {
+      background: #e5e5e5;
+      padding: 20px;
+      border-end-end-radius: 12px;
+      border-top-right-radius: 12px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .trap-title {
+      font-size: 30px;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    .trap-cards {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .trap-card {
+      background: #003366;
+      color: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 180px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .trap-card-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .trap-icon {
+      margin-top: 12px;
+      font-size: 20px;
+      background: white;
+      color: #003366;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="imageminvestimento">
+
+            <div class="links-a">
+                <a href="index.html" class="logo"><img src="Imagens/novaflowiniciante.png" width="150px" alt="LOGO"></a>
+                <a href="noticias/noticias.html" class="links-a2">Notícias</a>
+                <a href="acoes.html" class="links-a2">Ações</a>
+                <a href="" class="links-a2">Iniciante</a>
+                <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
+                <a href="imposto.html " class="links-a2">Imposto de renda</a>
+
+                <div class="Busca">
+                    <input type="text" id="txtBusca" placeholder="Pesquisar..." />
+                    <a href="#" style="cursor: pointer;">
+                        <img src="Imagens/pesquisa.png" style="width: 30px;height:30px;margin-top:6px; " id="btnBusca"
+                            alt="Buscar" />
+                    </a>
+
+
+                </div>
+            </div>
+            <P class="melhorpravc">Comece Sua Jornada na Educação <br> Financeira: Dicas para Iniciantes</P>
+
+        </nav>
+
+    </header>
+    <main>
+        <br><br>
+        <section style="display: flex; justify-content: center;">
+            <div class="caixa-educacao"
+                style="background-color:#004B99; border-radius:40px; display:flex; align-items:center; color:white; font-family:'Open Sans', sans-serif; max-width:800px;">
+                <div>
+                    <p class="titulo-educacao" style="margin:0;">
+                        Qual a Importância da
+                        <strong style="display:block; margin-top:8px;">Educação Financeira?</strong>
+                    </p>
+                </div>
+
+                <div class="linha-divisoria"
+                    style="border-left:1px solid white; height:400px; margin:0 30px; position:relative;">
+                    <div class="ponto"
+                        style="width:10px; height:10px; background:white; border-radius:50%; position:absolute; left:-5px; top:50px;">
+                    </div>
+                    <div class="ponto"
+                        style="width:10px; height:10px; background:white; border-radius:50%; position:absolute; left:-5px; bottom:140px;">
+                    </div>
+                </div>
+
+                <div class="texto-educacao" style="line-height:1.6;">
+                    <p>Imagine que seu dinheiro é como uma sementinha. Se você plantar hoje e cuidar bem, regando e
+                        protegendo, ela vai crescer e dar frutos no futuro. Mas, se gastar a semente toda agora, não
+                        terá nada para colher depois.</p>
+                    <p>A educação financeira é saber quando plantar, cuidar e colher; guardando um pouco agora para ter
+                        muito mais no futuro e alcançar objetivos sem depender da sorte.</p>
+                </div>
+            </div>
+        </section>
+        <br><br>
+
+
+
+        <section class="educacao">
+        <div class="texto-delimitado">
+            
+            <p>
+                Imagine que seu dinheiro é como uma planta. Se você cuidar bem, ela cresce, dá frutos e garante o futuro. Mas se esquecer dela, pode murchar. A educação financeira é o cuidado diário que ajuda você a alcançar sonhos sem depender da sorte
+            </p>
+        </div>
+    </section>
+<br><br>
+        <section>
+
+            <h2 class="titulo-passos">Primeiros Passos</h2>
+
+            <div class="container-passos">
+                <div class="card-passo" style="background-color:#4A90E2;">
+                    <img src="Imagens/Treasure Chest.png" width="60px" alt="">
+                    <p>Reserva de Emergência</p>
+                </div>
+
+                <div class="card-passo" style="background-color:#7ED321;">
+                    <img src="Imagens/Target.png" width="60px" alt="">
+                    <p>Defina Metas<br>e Objetivos</p>
+                </div>
+
+                <div class="card-passo" style="background-color:#F5A623;">
+                    <img src="Imagens/Open Book.png" width="60px" alt="">
+                    <p>Registre Seus<br>Gastos</p>
+                </div>
+
+                <div class="card-passo" style="background-color:#514B4B;">
+                    <img src="Imagens/Positive Dynamic.png" width="60px" alt="">
+                    <p>Invista aos<br>Poucos</p>
+                </div>
+            </div>
+
+            <div style="text-align:center;">
+                <a href="#" class="btn-download">Baixar Planilha Grátis</a>
+            </div>
+
+        </section>
+        <br><br><br><br>
+        <section class="pqinvestir">
+            <div style="display: flex;">
+                <img src="Imagens/8610011 2.png" alt="">
+                <p
+                    style="text-align: center; margin-left: 50%; color: white; font-size: 40px; font-family: 'Open Sans', sans-serif; margin-top: 6%;">
+                    Porque investir em <br>
+                    <b>Educação Financeira?</b>
+                </p>
+
+
+            </div>
+            <p style="justify-content: center; margin-left: 40%; color: white; font-size: 30px; font-family: 'Open Sans', sans-serif; margin-top: 15%;"><b> Autonomia e Controle sobre o Dinheiro +</b></p>
+            <p style="text-align: justify; margin-left: 40%; margin-right: 14%; color: white; font-size: 22px; font-family: 'Open Sans', sans-serif;">Investir em educação financeira é fundamental para conquistar autonomia, pois permite tomar decisões conscientes e independentes sobre o próprio dinheiro. Com conhecimento, é possível planejar melhor os gastos, evitar dívidas e criar estratégias para alcançar objetivos. Assim, o controle financeiro se torna uma ferramenta para viver com mais segurança, liberdade e tranquilidade.</p>
+
+
+
+
+
+
+
+
+
+
+        </section>
+         <br><br>
+  <!-- Armadilhas -->
+  <div class="trap-container">
+    <div class="trap-box">
+      <div class="trap-title">Cuidado com essas <b>Armadilhas!</b></div>
+
+      <div class="trap-cards">
+        <div class="trap-card">
+          <div class="trap-card-title">Comprar por impulso</div>
+          <div>Gastar sem precisar e atrapalha o orçamento.</div>
+          <div class="trap-icon">!</div>
+        </div>
+
+        <div class="trap-card">
+          <div class="trap-card-title">Usar todo o limite do cartão</div>
+          <div>Gera dívidas caras com juros altos.</div>
+          <div class="trap-icon">!</div>
+        </div>
+
+        <div class="trap-card">
+          <div class="trap-card-title">Não ter reserva de emergência</div>
+          <div>Fica vulnerável em imprevistos.</div>
+          <div class="trap-icon">!</div>
+        </div>
+
+        <div class="trap-card">
+          <div class="trap-card-title">Achar que precisa ser rico para investir</div>
+          <div>Qualquer valor já pode ser investido.</div>
+          <div class="trap-icon">!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- FAQ -->
+  <div class="faq-container">
+    <div class="faq-box">
+      <div class="faq-title">É normal ter <b>Dúvidas</b> e aqui vai<br> Algumas delas!</div>
+
+      <button class="faq-accordion">Preciso ganhar muito para investir?</button>
+      <div class="faq-panel">
+        <p>Não. É possível começar com valores pequenos, como R$30 por mês. O importante é criar o hábito.</p>
+      </div>
+
+      <button class="faq-accordion">Qual a diferença entre poupar e investir?</button>
+      <div class="faq-panel">
+        <p>Poupar é guardar dinheiro, já investir é aplicar esse dinheiro para que ele cresça com o tempo.</p>
+      </div>
+
+      <button class="faq-accordion">Estou endividado, devo investir mesmo assim?</button>
+      <div class="faq-panel">
+        <p>Se você tem dívidas caras, como cartão de crédito, é melhor quitá-las antes de começar a investir.</p>
+      </div>
+
+      <button class="faq-accordion">Qual é o primeiro passo para organizar minha vida financeira?</button>
+      <div class="faq-panel">
+        <p>O primeiro passo é entender seus gastos: anote receitas e despesas para ter clareza do orçamento.</p>
+      </div>
+
+      <button class="faq-accordion">Reserva de emergência: quanto preciso?</button>
+      <div class="faq-panel">
+        <p>O ideal é ter de 3 a 6 meses de gastos mensais guardados em um investimento seguro e de fácil acesso.</p>
+      </div>
+
+      <button class="faq-accordion">Onde investir primeiro?</button>
+      <div class="faq-panel">
+        <p>Comece pela reserva de emergência em renda fixa de baixo risco, como Tesouro Selic ou CDBs com liquidez diária.</p>
+      </div>
+    </div>
+  </div>
+
+<br><br><br>
+
+<div style="display: flex; justify-content: center;">
+  <img src="Imagens/organizarvidafinanceira.png" width="1000px" alt="">
+  </div>
+
+    <div style="text-align:center;">
+                <a href="#" class="btn-download">Saiba Mais</a>
+            </div>
+
+
+            <br><br><br>
+    </main>
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Mapa do Site -->
+            <div class="footer-section">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="index.html">Mapa do Site</a></li>
+                    <li><a href="investimentos.html">Tipos de Investimento</a></li>
+                    <li><a href="imposto.html">Imposto de Renda</a></li>
+                    <li><a href="iniciante.html">Iniciante</a></li>
+                    <li><a href="sobreNos.html">Quem Somos?</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-section">
+                <h4>Contato:</h4>
+                <ul>
+                    <li><a href="mailto:NovaFlow@gmail.com">E-Mail: NovaFlow@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/NovaFlowFinancas" target="_blank">Instagram:
+                            NovaFlowFinancas</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">YouTube: Nova Flow - Educação financeira</a>
+                    </li>
+                    <li><a href="https://www.pinterest.com" target="_blank">Pinterest: Nova Flow</a></li>
+                </ul>
+            </div>
+
+            <!-- Desenvolvido por -->
+            <div class="footer-section">
+                <p>Desenvolvido por: NovaFlow Eqp.</p>
+                <p>© 2025 - NovaFlow - Todos os direitos reservados</p>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com" target="_blank"><img src="Imagens/instagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="Imagens/pinterest.png"
+                            alt="Pinterest"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="Imagens/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="Imagens/tiktok.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+    const acc = document.querySelectorAll(".faq-accordion");
+    acc.forEach(btn => {
+      btn.addEventListener("click", function() {
+        this.classList.toggle("faq-active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+
+</html>

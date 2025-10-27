@@ -67,6 +67,17 @@
 
 
         }
+        .fundodamao{
+          width: 100%;
+            height: 100%;
+            min-height: 700px;
+            background-image: url(Imagens/fundodamaoindex.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
 
         .conectamos {
             font-family: "Inter", sans-serif;
@@ -81,6 +92,166 @@
         .indexcta {
             display: flex;
         }
+
+        .container {
+            display: flex;
+            padding-top: 20px;
+        }
+
+
+
+        .imagem img {
+            width: 100%;
+            min-width: 667px;
+            height: auto;
+
+        }
+
+        .texto {
+
+            flex: 1;
+            padding: 0 30px;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+
+        .texto h2 {
+            font-style: normal;
+            
+            padding-top: 100px;
+            font-size: 32px;
+            padding-bottom: 50px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .texto p {
+            color: #2D2B33;
+            font-size: 27px;
+            line-height: 1.6;
+            text-align: justify;
+            padding-right: 40px;
+        }
+
+
+        .bloco-geral {
+      text-align: center;
+      
+      padding: 40px 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .titulo-principal {
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #111;
+    }
+
+    .linha-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .caixa {
+      color: #FCFCFC;
+      width:230px;
+      height: 290px;
+      border-radius: 20px;
+      padding: 25px 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .caixa:hover {
+      transform: translateY(-5px);
+    }
+
+    .icone {
+      font-size: 45px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .texto-card {
+      font-size: 22px;
+      color: #222;
+      line-height: 1.5;
+    }
+
+
+    .faixa {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #0b0b0b;
+      color: white;
+      border-radius: 25px;
+      
+      width: 850px;
+      margin: 50px auto;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .info {
+      flex: 1;
+      margin-right: 40px;
+    }
+
+    .info h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .info p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .botao {
+      display: inline-block;
+      background-color: #7c6df2;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 20px 50px;
+      border-radius: 50px;
+      font-size: 20px;
+      transition: background-color 0.3s;
+      margin-left: 50px;
+    }
+
+    .botao:hover {
+      background-color: #6a5de0;
+    }
+    .botao2 {
+      display: inline-block;
+      background-color: #7c6df2;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 30px 55px;
+      border-radius: 50px;
+      font-size: 20px;
+      transition: background-color 0.3s;
+      margin-left: 50px;
+    }
+
+    .botao2:hover {
+      background-color: #6a5de0;
+    }
+
+    .foto {
+      flex: 0 0 220px;
+      text-align: right;
+    }
+
+    .foto img {
+      width: 220px;
+      height: auto;
+      border-radius: 20px;
+    }
     </style>
 </head>
 
@@ -93,7 +264,7 @@
                 <a href="index.html" class="logo"><img src="Imagens/Logo.png" width="150px" alt="LOGO"></a>
                 <a href="noticias/noticias.html" class="links-a2">Notícias</a>
                 <a href="acoes.html" class="links-a2">Ações</a>
-                <a href="" class="links-a2">Iniciante</a>
+                <a href="iniciante.html" class="links-a2">Iniciante</a>
                 <a href="investimentos.html" class="links-a2">Tipos de Investimento</a>
                 <a href="imposto.html " class="links-a2">Imposto de renda</a>
 
@@ -124,7 +295,7 @@
           margin-left: 25%;
           margin-top: 20px;
           ">
-          
+
                         📘Quero Aprender Agora
                     </a>
 
@@ -132,86 +303,131 @@
                 </div>
 
 
-                <img src="Imagens/Group 72.png" style="margin-left: 50px; margin-right: 20%; margin-top: 2%;" width="400px" alt="">
+                <img src="Imagens/Group 72.png" style="margin-left: 50px; margin-right: 20%; margin-top: 2%;"
+                    width="400px" alt="">
 
             </div>
         </nav>
     </header>
 
+    <!-- Objetivo nova flow -->
 
+    <div class="container">
+        <div class="imagem" style="flex: 1;">
+            <img src="Imagens/pexels-shkrabaanthony-5306436 1.png" alt="Grupo estudando sobre finanças"
+                style="width:100%; ">
+        </div>
 
-
-    <!-- SEÇÃO EDUCAÇÃO FINANCEIRA -->
-    <section class="educacao">
-        <div class="texto-delimitado">
-            <h2>Qual a importância da Educação Financeira?</h2>
-            <p>
-                A educação financeira básica é essencial para que as pessoas possam tomar
-                decisões mais conscientes e responsáveis em relação ao seu dinheiro. Ela
-                proporciona o entendimento de como administrar o orçamento, equilibrar a
-                renda e os gastos, além de permitir o planejamento de objetivos a curto,
-                médio e longo prazo. Com esse conhecimento, é possível evitar o endividamento,
-                pois sabemos o quanto podemos gastar e quando devemos economizar. Também nos
-                ajuda a perceber que nem todas as promoções ou facilidades de crédito são
-                vantajosas, o que nos torna consumidores mais críticos e conscientes.
+        <div class="texto" style="flex: 1; padding: 0 30px;">
+            <h2 style="font-size: 26px; margin-bottom: 15px;">Bem-vindo à Nova Flow</h2>
+            <p style="font-size: 27px;  text-align: justify;">
+                A Nova Flow é um espaço criado para jovens entre 14 e 24 anos que querem aprender a cuidar do próprio
+                dinheiro e começar a investir de forma consciente. Nosso objetivo não é criar informações, mas filtrar
+                conteúdos confiáveis para que você não caia em fake news e tenha segurança nas suas decisões
+                financeiras.
             </p>
-        </div>
-    </section>
-
-    <!-- SEÇÃO OBJETIVO -->
-    <section class="imagemobjetivo">
-        <div class="imagem-objetivo">
-
-        </div>
-        <div class="texto-objetivo">
             <br><br>
-            <h2 style="color: white; font-size: 40px;">Qual o Nosso Objetivo?</h2><br><br><br><br>
-            <p style="color: white; word-spacing: 10px;font-size: 25px;">
-                <!-- Você pode colar aqui o texto completo que deseja adicionar -->
-                Através deste site, esperamos empoderar novos investidores com o conhecimento necessário para tomar
-                decisões informadas e seguras no mercado financeiro digital. O compromisso da equipe é oferecer um
-                conteúdo de qualidade, acessível e atualizado, que sirva como um guia confiável para todos os que
-                desejam explorar esse novo e dinâmico universo de investimentos.
+            <p style="font-size: 27px; text-align: justify;">
+                Aqui, você encontra tudo o que precisa para dar os primeiros passos no mundo das finanças e construir um
+                futuro mais sólido.
             </p>
         </div>
+    </div>
 
-    </section>
-    <!-- SEÇÃO BENEFÍCIOS -->
-    <section class="educacao">
-        <div class="texto-delimitado">
-            <h2>Como a Educação Financeira pode trazer Benefícios?</h2>
-            <img src="Imagens/beneficios.png" alt="Benefícios da Educação Financeira"
-                style="display: block; margin: 0 auto;">
-        </div>
-    </section>
-    <!-- SEÇÃO REALIDADE BRASILEIRA -->
-    <section class="objetivo realidade">
-        <div class="imagem-objetivo">
-            <img src="Imagens/realidade.png" alt="Realidade Brasileira">
-        </div>
-        <div>
-            <h2>A Realidade Brasileira sobre Educação Financeira</h2>
-            <p style="text-align: justify;">
-                Estatísticas Relevantes: Apresente dados atuais sobre a educação financeira no Brasil.
-                Por exemplo: "Cerca de 60% da população brasileira não tem acesso a conteúdos sobre educação
-                financeira."
-            </p>
-        </div>
+
+
+    <img src="Imagens/Line 64 1.png" width="100%" alt="">
+
+
+    <!-- Cards -->
+
+<div class="bloco-geral" style="padding:40px 0;">
+    <h2 class="titulo-principal" style="font-size:32px; color:#111;">Por que usar a Nova Flow?</h2>
+
+    <div class="linha-cards" style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+      
+      <div class="caixa">
+        <img src="Imagens/Vector.png" style="padding: 40px;" alt="">
+        <p class="texto-card" style=" color:#222; line-height:1.5;">Conteúdo filtrado e confiável, sem fake news</p>
+      </div>
+
+      <div class="caixa">
+        <img src="Imagens/segundobloco.png" style="padding: 40px;" alt="">
+        <p class="texto-card" style=" color:#222; line-height:1.5;">Explicações claras e acessíveis para iniciantes</p>
+      </div>
+
+      <div class="caixa">
+        <img src="Imagens/terceirobloco.png" style="padding: 40px;" alt="">
+        <p class="texto-card" style=" color:#222; line-height:1.5;">Ferramentas práticas para organizar sua vida financeira</p>
+      </div>
+
+      <div class="caixa">
+        <img src="Imagens/quarto.png" style="padding: 40px;" alt="">
+        <p class="texto-card" style=" color:#222; line-height:1.5;">Um guia feito especialmente para jovens</p>
+      </div>
+
+    </div>
+  </div>
+
+   <img src="Imagens/Line 64 2.png" width="100%" alt="">
+
+
+<!-- Parte do link da calculadora -->
+
+   <div class="faixa" style="background-color:#0b0b0b; border-radius:25px; padding: 20px 30px;">
+    
+    <div class="info" style="flex:1; margin-right:40px; margin-left: 40px;">
+      <h3 style="font-size:25px;">Conheça Nossa Calculadora:</h3>
+      <p style="font-size:20px; line-height:1.6; color:#ddd;">
+        Equilibre seus gastos, realize seus desejos e <br> invista no seu futuro com a regra 50/30/20.
+      </p>
+      <a href="calculadora.html" class="botao">Clique Aqui</a>
+    </div>
+
+    <div class="foto" style="flex:0 0 220px; text-align:right;">
+      <img src="Imagens/jovem-expressiva-posando-no-estudio 1.png" alt="Mulher segurando calculadora" style="width:220px; border-radius:20px;">
+    </div>
+
+  </div>
+
+
+  <section style="display: flex;" class="fundodamao">
+    <div style="display: flex;">
+      <div>
+      <img src="Imagens/MaoNovaFlow.png" alt="">
+</div>
+      <div>
+      <p style="color: white; font-family: 'Open Sans', sans-serif; font-size: 20px; margin-top: 150px; margin-left: 40px; margin-right: 200px;">
+         Investir <strong style="color:#7358F0;"> não é complicado </strong>quando você tem as informações certas.
+        <br>
+        Na <strong style="color:#7358F0;"> Nova Flow</strong>, você encontra um guia seguro para começar a transformar sua relação com o dinheiro.</p>
+        
+        <a href="iniciante.html" style="margin-left: 20%; margin-top: 28%;" class="botao2">Clique Aqui</a>
+      </div>
+      
+
+  </section>
+
+
+
+
+<BR><BR></BR></BR>
+
     </section>
     <!-- SEÇÃO CARROSSEL DE NOTÍCIAS -->
     <section class="carrossel">
         <h2>Últimas Notícias</h2>
         <div class="noticias-container">
-            <div style="cursor: pointer;"  class="noticia-card">
+            <div style="cursor: pointer;" class="noticia-card">
                 <img src="Imagens/noticia1index.png" alt="Notícia 1">
                 <h3>Banco do Brasil enfrenta níveis recordes de inadimplência no agronegócio, diz CEO</h3>
             </div>
-            <div style="cursor: pointer;"  class="noticia-card">
+            <div style="cursor: pointer;" class="noticia-card">
                 <img src="Imagens/noticia2index.png" alt="Notícia 2">
                 <h3>Cosan (CSAN3): prejuízo de R$ 1 bi e um único gatilho para destravar as ações; veja por que bancos
                     apostam em alta de 300%</h3>
             </div>
-            <div style="cursor: pointer;"  class="noticia-card">
+            <div style="cursor: pointer;" class="noticia-card">
                 <img src="Imagens/noticia3index.png" alt="Notícia 3">
                 <h3>Mercado financeiro hoje reage a PIB do Brasil, PCE dos EUA e tarifas de Trump; veja os destaques
                 </h3>
@@ -219,6 +435,7 @@
         </div>
     </section>
 
+    <BR><BR></BR></BR>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -230,7 +447,7 @@
                     <li><a href="index.html">Mapa do Site</a></li>
                     <li><a href="investimentos.html">Tipos de Investimento</a></li>
                     <li><a href="imposto.html">Imposto de Renda</a></li>
-                    <li><a href="imposto.html">Iniciante</a></li>
+                    <li><a href="iniciante.html">Iniciante</a></li>
                     <li><a href="sobreNos.html">Quem Somos?</a></li>
                 </ul>
             </div>
